@@ -62,9 +62,10 @@
       color: rgba(0, 0, 0, 0.5);
       line-height: 1.8;
       padding-top: 0.25rem;
+      margin-bottom: 1.25rem;
     }
 
-    p {
+    .portfolio section p {
       font-size: 0.8rem;
       width: 602px;
     }
@@ -90,13 +91,17 @@
       font-size: 0.6rem;
     }
 
-    section {
+    .portfolio section {
       padding: 2rem 0 0.5rem 0;
     }
 
-    img {
+    .portfolio section img {
       box-sizing: content-box;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+      display: inline-block;
+      width: 600px;
+      height: 80px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .date {
@@ -110,7 +115,7 @@
       top: 0;
     }
 
-    section a:hover~.date {
+    .portfolio section a:hover~.date {
       opacity: 1;
       transition: opacity 0.9s ease-in-out;
     }
@@ -120,31 +125,50 @@
   <h1>Yuri Feldman</h1>
   <h2>Interaction Design, Data &amp; Spatial Visualization</h2>
 
-  <section>
-    <aside>
-      Visualizing Victoria in the 2011 Census. Created for GovHack 2013 with d3.js, topojson, crossfilter and data from the ABS.
-    </aside>
-    <p>
-      <a href="census">
-        Australian Census Explorer
-        <img style="display: inline-block; width: 600px; height: 80px; border: 1px solid rgba(0, 0, 0, 0.1);" src="4.png" />
-      </a>
-      <span class="date">June 2, 2013</span>
-    </p>
-  </section>
+  <!--<section>-->
+    <!--<p style="font-size: 0.8rem;">I am currently available for freelance work.</p>-->
+  <!--</section>-->
 
-  <section>
-    <aside>
-      How does Australia&rsquo;s postcode system work? Decode your postcode and find out. Created with d3.js and topojson with data from the ABS.
-    </aside>
-    <p>
-      <a href="postcode">
-        Australian Postcode Decoder
-        <img style="display: inline-block; width: 600px; height: 80px; border: 1px solid rgba(0, 0, 0, 0.1);" src="postcode-decoder.png" />
-      </a>
-      <span class="date">April 14, 2013</span>
-    </p>
-  </section>
+  <div class="portfolio">
+    <section>
+      <aside>
+        Not sure what to watch? Battle movies in a chess-ranked tournament to find out. Created with d3.js, node and Firebase with data from IMDb.
+      </aside>
+      <p>
+        <a href="census">
+          ELO Movie Ranking Game
+          <img src="elo-movie.png" />
+        </a>
+        <span class="date">November 4, 2013</span>
+      </p>
+    </section>
+
+    <section>
+      <aside>
+        Visualizing Victoria in the 2011 Census. Created for GovHack 2013 with d3.js, topojson, crossfilter and data from the ABS.
+      </aside>
+      <p>
+        <a href="census">
+          Australian Census Explorer
+          <img src="census.png" />
+        </a>
+        <span class="date">June 2, 2013</span>
+      </p>
+    </section>
+
+    <section>
+      <aside>
+        How does Australia&rsquo;s postcode system work? Decode your postcode and find out. Created with d3.js and topojson with data from the ABS.
+      </aside>
+      <p>
+        <a href="postcode">
+          Australian Postcode Decoder
+          <img src="postcode-decoder.png" />
+        </a>
+        <span class="date">April 14, 2013</span>
+      </p>
+    </section>
+  </div>
 
   <!--Cool stuff I've made: <a href="/postcode">Australian Postcode Decoder</a>, <a href="/census">Australian Census Explorer</a>, <a href="/elo">ELO Movie Ranking Game</a>, <a href="/geelong">Geelong Buildings by Age</a>, <a href="http://melbourne.yuri.io">Melbourne Dashboard</a>-->
   <!--<br />-->
