@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -ms-font-feature-settings: "liga", "clig";
+  -webkit-font-feature-settings: "liga", "clig";
+  -moz-font-feature-settings: "liga", "clig";
+  font-feature-settings: "liga", "clig";
+
+}
+
+html {
+  font: 125%/1.5 "adelle", serif;
+  color: #222;
+  min-width: 900px;
+  background: #FBFEFA;
+}
+
+body {
+  margin: 4rem auto;
+  width: 800px;
+}
+
+h1, h3, h4, h5 {
+  font-family: "adelle", serif;
+  line-height: 1;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: "adelle-sans",sans-serif;
+  font-size: 16px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+  padding-top: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.portfolio section p {
+  font-size: 0.8rem;
+  width: 602px;
+}
+
+a {
+  text-decoration: none;
+  color: #4080B6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+aside {
+  display: block;
+  float: right;
+  position: absolute;
+  right: 0rem;
+  width: 9rem;
+  text-align: left;
+  clear: both;
+  top: 1rem;
+  font-size: 0.6rem;
+}
+
+.portfolio section {
+  margin: 4rem 0 0.5rem 0;
+}
+
+.portfolio section img {
+  box-sizing: content-box;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  width: 600px;
+  height: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.65rem;
+  vertical-align: baseline;
+  line-height: 1.2rem;
+  color: #777;
+  opacity: 1;
+  top: 0;
+}
+
+.portfolio section a:hover~.date {
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.clearfix::after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.contact {
+  float: right;
+  text-align: right;
+}
+
+.where-and-what {
+  float: left;
+}
+
+ul {
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+h1 a {
+  color: #222;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}

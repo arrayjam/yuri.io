@@ -18,116 +18,26 @@
     ga('send', 'pageview');
   </script>
   <meta name="google-site-verification" content="0yX2FxtNX2fdD07zL59jHoUDUINiwcFJlKjoXr1OWT0" />
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      position: relative;
-      text-rendering: optimizeLegibility;
-      -ms-font-feature-settings: "liga", "clig";
-      -webkit-font-feature-settings: "liga", "clig";
-      -moz-font-feature-settings: "liga", "clig";
-      font-feature-settings: "liga", "clig";
-
-    }
-
-    html {
-      font: 125%/1.5 "adelle", serif;
-      color: #222;
-      min-width: 900px;
-      background: #FBFEFA;
-    }
-
-    body {
-      margin: 4rem auto;
-      width: 800px;
-    }
-
-    h1 {
-      font-family: "adelle", serif;
-      font-weight: 400;
-      font-size: 3rem;
-      line-height: 1;
-    }
-
-    h2 {
-      font-family: "adelle-sans",sans-serif;
-      font-size: 16px;
-      font-size: 0.8rem;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      color: rgba(0, 0, 0, 0.5);
-      line-height: 1.8;
-      padding-top: 0.25rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .portfolio section p {
-      font-size: 0.8rem;
-      width: 602px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #4080B6;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    aside {
-      display: block;
-      float: right;
-      position: absolute;
-      right: 0rem;
-      width: 9rem;
-      text-align: left;
-      clear: both;
-      top: 5rem;
-      font-size: 0.6rem;
-    }
-
-    .portfolio section {
-      padding: 4rem 0 0.5rem 0;
-    }
-
-    .portfolio section img {
-      box-sizing: content-box;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
-      display: inline-block;
-      width: 600px;
-      height: 80px;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .date {
-      position: absolute;
-      right: 0;
-      font-size: 0.65rem;
-      vertical-align: baseline;
-      line-height: 1.2rem;
-      color: #777;
-      opacity: 1;
-      top: 0;
-    }
-
-    .portfolio section a:hover~.date {
-      opacity: 1;
-      transition: opacity 0.9s ease-in-out;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Yuri Feldman</h1>
+  <h1><a href="./">Yuri Feldman</a></h1>
   <h2>Interaction Design, Data &amp; Spatial Visualization</h2>
 
-  <!--<section>-->
-    <!--<p style="font-size: 0.8rem;">I am currently available for freelance work.</p>-->
-  <!--</section>-->
+  <section class="clearfix">
+    <ul class="contact">
+      <li><a href="mailto:hi@yuri.io">hi@yuri.io</a></li>
+      <li><a href="https://twitter.com/arrayjam">@arrayjam</a></li>
+      <li><a href="#">Download Résumé</a></li>
+      <li><a href="https://github.com/arrayjam">github.com/arrayjam</a></li>
+    </ul>
+
+    <ul class="where-and-what">
+      <li>Based in Melbourne, Australia.</li>
+      <li>View my Planfile at arrayjam@yuri.io.</li>
+      <li>I&#8217;m available for <a href="consulting">data visualization consulting</a>.</li>
+    </ul>
+  </section>
 
   <div class="portfolio">
     <section>
