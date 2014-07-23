@@ -16,6 +16,7 @@ html {
   color: #222;
   min-width: 900px;
   background: #FBFEFA;
+  -webkit-text-size-adjust: none;
 }
 
 body {
